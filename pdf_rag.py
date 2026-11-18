@@ -51,13 +51,6 @@ ids: list[str] = []
 indexed_files: list[str] = []
 indexed_pages = 0
 files_without_text: list[str] = []
-
-SMART SUBJECT TUTOR | STUDENT LAB GUIDE | v3.0
-
-PDF-first RAG • Multi-provider APIs • GitHub Codespaces
-
-Page 16
-
 for uploaded_file in uploaded_pdfs:
 file_name = os.path.basename(uploaded_file.name)
 file_bytes = uploaded_file.getvalue()
@@ -139,14 +132,7 @@ retrieved.append(
 return retrieved
 @staticmethod
 def _call_model(provider: str, model: str, prompt: str) -> str:
-
-SMART SUBJECT TUTOR | STUDENT LAB GUIDE | v3.0
-
-PDF-first RAG • Multi-provider APIs • GitHub Codespaces
-
-Page 17
-
-key_name = API_KEY_NAMES[provider]
+  key_name = API_KEY_NAMES[provider]
 api_key = os.getenv(key_name, "").strip()
 if not api_key:
 raise ValueError(
