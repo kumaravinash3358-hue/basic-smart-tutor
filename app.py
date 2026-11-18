@@ -76,13 +76,6 @@ st.success(
 f"Ready! Indexed {len(stats['files'])} file(s), "
 f"{stats['pages_with_text']} text page(s), and {stats['chunks']} searchable passage(s)."
 )
-
-SMART SUBJECT TUTOR | STUDENT LAB GUIDE | v3.0
-
-PDF-first RAG • Multi-provider APIs • GitHub Codespaces
-
-Page 19
-
 if stats["files_without_text"]:
 st.warning(
 "No selectable text was found in: "
@@ -171,3 +164,4 @@ st.divider()
 st.caption(
 "Privacy reminder: PDF text passages retrieved by this app are sent to the selected AI provider for answering. "
 "Do not upload confidential or restricted documents unless you have permission."
+  
